@@ -1,0 +1,95 @@
+path,subset,corrupt,width,height,pixels,filesize_kb,mean_r,mean_g,mean_b,brightness,contrast_std,metadata_blocks
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00001.jpg,28x28_images,False,28,28,784,18.6083984375,199.89923,192.77551,185.48215,192.71896,72.02225,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00002.jpg,28x28_images,False,28,28,784,11.861328125,214.1926,209.14796,207.76659,210.36905,61.291485,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00003.jpg,28x28_images,False,28,28,784,18.1259765625,207.24617,201.10715,203.07654,203.80995,62.896976,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00004.jpg,28x28_images,False,28,28,784,18.193359375,216.09439,209.88393,213.03827,213.00552,54.528355,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00005.jpg,28x28_images,False,28,28,784,18.24609375,208.78189,201.56505,209.04465,206.46387,55.304813,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00006.jpg,28x28_images,False,28,28,784,18.1044921875,219.38904,212.92984,216.42984,216.24957,48.36111,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00007.jpg,28x28_images,False,28,28,784,18.0634765625,200.17474,194.15944,196.71046,197.01488,67.56543,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00008.jpg,28x28_images,False,28,28,784,11.9716796875,191.05103,184.65178,182.95154,186.21811,74.65061,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00009.jpg,28x28_images,False,28,28,784,18.0771484375,209.22066,203.88138,204.99362,206.03189,61.68746,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00010.jpg,28x28_images,False,28,28,784,18.2080078125,195.02296,187.99617,186.33163,189.78358,71.58459,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00011.jpg,28x28_images,False,28,28,784,11.9462890625,206.4528,201.5676,206.20026,204.74022,59.788105,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00012.jpg,28x28_images,False,28,28,784,18.4228515625,219.03316,213.08801,215.79974,215.97363,54.04064,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00013.jpg,28x28_images,False,28,28,784,18.4755859375,198.19516,191.58035,192.40816,194.06122,69.676704,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00014.jpg,28x28_images,False,28,28,784,18.443359375,207.61096,199.90944,195.51021,201.01021,67.899025,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00015.jpg,28x28_images,False,28,28,784,12.3291015625,209.39668,203.26276,200.94005,204.53316,64.76073,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00016.jpg,28x28_images,False,28,28,784,18.46484375,216.32654,209.8954,212.47832,212.90009,55.231567,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00017.jpg,28x28_images,False,28,28,784,18.4755859375,213.82526,206.58801,211.9222,210.77849,58.696896,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00018.jpg,28x28_images,False,28,28,784,18.3818359375,213.8329,208.19005,215.76913,212.59737,55.48683,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00019.jpg,28x28_images,False,28,28,784,18.3740234375,217.90689,212.22704,215.59822,215.24405,56.229115,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00020.jpg,28x28_images,False,28,28,784,12.171875,219.75255,215.34822,219.97194,218.35757,53.1008,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00021.jpg,28x28_images,False,28,28,784,18.38671875,212.89668,205.45026,207.02168,208.4562,62.82609,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00022.jpg,28x28_images,False,28,28,784,18.3623046875,209.91582,203.36224,206.44388,206.57397,60.323368,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00023.jpg,28x28_images,False,28,28,784,18.4052734375,207.55103,199.52296,201.53699,202.87032,64.200554,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00024.jpg,28x28_images,False,28,28,784,18.390625,215.72577,208.40944,209.75128,211.29549,59.568436,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00025.jpg,28x28_images,False,28,28,784,18.60546875,209.50128,200.14668,206.5574,205.40178,55.95045,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00026.jpg,28x28_images,False,28,28,784,12.3974609375,210.15434,205.35204,208.97066,208.15901,53.212643,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00027.jpg,28x28_images,False,28,28,784,18.34375,196.63647,192.13266,194.65306,194.47406,64.2158,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00028.jpg,28x28_images,False,28,28,784,18.3720703125,198.1046,194.94643,197.25383,196.76828,63.43906,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00029.jpg,28x28_images,False,28,28,784,12.068359375,177.21046,171.42729,171.64413,173.42729,72.04149,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00030.jpg,28x28_images,False,28,28,784,11.9091796875,216.31505,212.3903,216.79082,215.16539,53.27173,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00031.jpg,28x28_images,False,28,28,784,18.146484375,217.86734,210.81888,213.59311,214.09311,50.037956,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00032.jpg,28x28_images,False,28,28,784,12.0888671875,215.8954,207.59566,214.90689,212.79932,51.510933,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00033.jpg,28x28_images,False,28,28,784,18.255859375,207.91199,197.73087,200.07909,201.90732,56.20901,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00034.jpg,28x28_images,False,28,28,784,11.8388671875,218.9324,212.3597,210.34694,213.87968,52.672825,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00035.jpg,28x28_images,False,28,28,784,18.2236328125,215.7704,208.31505,211.2921,211.79251,54.894638,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00036.jpg,28x28_images,False,28,28,784,18.28125,211.07271,202.38904,211.01785,208.15987,52.71535,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00037.jpg,28x28_images,False,28,28,784,18.24609375,213.16965,208.17091,211.2028,210.8478,53.034336,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00038.jpg,28x28_images,False,28,28,784,18.1337890625,214.97832,211.6454,214.1046,213.57611,54.700428,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00039.jpg,28x28_images,False,28,28,784,18.1728515625,206.02296,200.85841,203.46811,203.44983,59.973797,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00040.jpg,28x28_images,False,28,28,784,18.142578125,180.09949,174.71428,173.94771,176.25383,72.15083,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00041.jpg,28x28_images,False,28,28,784,18.119140625,199.6875,196.67984,198.52551,198.29762,63.29807,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00042.jpg,28x28_images,False,28,28,784,18.1494140625,193.34566,188.4426,190.6046,190.79762,64.15347,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00043.jpg,28x28_images,False,28,28,784,11.837890625,207.08546,206.21939,200.58035,204.6284,60.663223,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00044.jpg,28x28_images,False,28,28,784,18.0849609375,197.82271,198.93495,195.27678,197.34482,61.23208,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00045.jpg,28x28_images,False,28,28,784,18.1240234375,189.85204,192.1875,190.41199,190.81718,61.563,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00046.jpg,28x28_images,False,28,28,784,18.1259765625,185.17346,186.22577,179.25638,183.55186,69.100174,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00047.jpg,28x28_images,False,28,28,784,18.1572265625,196.66965,195.42984,185.36353,192.48767,57.89853,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00048.jpg,28x28_images,False,28,28,784,18.197265625,185.27296,186.69516,181.46173,184.47661,64.94257,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00049.jpg,28x28_images,False,28,28,784,17.9736328125,202.5153,202.82654,198.96046,201.4341,61.39072,4
+motifs (isen-isen)/Gunung Ringgit/28x28_images/GunungRinggit_00050.jpg,28x28_images,False,28,28,784,17.994140625,200.29082,202.2551,197.72449,200.09013,62.01279,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00001.jpg,all_motifs (864),False,28,28,784,18.6083984375,199.89923,192.77551,185.48215,192.71896,72.02225,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00002.jpg,all_motifs (864),False,28,28,784,11.861328125,214.1926,209.14796,207.76659,210.36905,61.291485,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00003.jpg,all_motifs (864),False,28,28,784,18.1259765625,207.24617,201.10715,203.07654,203.80995,62.896976,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00004.jpg,all_motifs (864),False,28,28,784,18.193359375,216.09439,209.88393,213.03827,213.00552,54.528355,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00005.jpg,all_motifs (864),False,28,28,784,18.24609375,208.78189,201.56505,209.04465,206.46387,55.304813,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00006.jpg,all_motifs (864),False,28,28,784,18.1044921875,219.38904,212.92984,216.42984,216.24957,48.36111,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00007.jpg,all_motifs (864),False,28,28,784,18.0634765625,200.17474,194.15944,196.71046,197.01488,67.56543,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00008.jpg,all_motifs (864),False,28,28,784,11.9716796875,191.05103,184.65178,182.95154,186.21811,74.65061,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00009.jpg,all_motifs (864),False,28,28,784,18.0771484375,209.22066,203.88138,204.99362,206.03189,61.68746,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00010.jpg,all_motifs (864),False,28,28,784,18.2080078125,195.02296,187.99617,186.33163,189.78358,71.58459,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00011.jpg,all_motifs (864),False,28,28,784,11.9462890625,206.4528,201.5676,206.20026,204.74022,59.788105,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00012.jpg,all_motifs (864),False,28,28,784,18.4228515625,219.03316,213.08801,215.79974,215.97363,54.04064,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00013.jpg,all_motifs (864),False,28,28,784,18.4755859375,198.19516,191.58035,192.40816,194.06122,69.676704,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00014.jpg,all_motifs (864),False,28,28,784,18.443359375,207.61096,199.90944,195.51021,201.01021,67.899025,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00015.jpg,all_motifs (864),False,28,28,784,12.3291015625,209.39668,203.26276,200.94005,204.53316,64.76073,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00016.jpg,all_motifs (864),False,28,28,784,18.46484375,216.32654,209.8954,212.47832,212.90009,55.231567,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00017.jpg,all_motifs (864),False,28,28,784,18.4755859375,213.82526,206.58801,211.9222,210.77849,58.696896,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00018.jpg,all_motifs (864),False,28,28,784,18.3818359375,213.8329,208.19005,215.76913,212.59737,55.48683,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00019.jpg,all_motifs (864),False,28,28,784,18.3740234375,217.90689,212.22704,215.59822,215.24405,56.229115,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00020.jpg,all_motifs (864),False,28,28,784,12.171875,219.75255,215.34822,219.97194,218.35757,53.1008,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00021.jpg,all_motifs (864),False,28,28,784,18.38671875,212.89668,205.45026,207.02168,208.4562,62.82609,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00022.jpg,all_motifs (864),False,28,28,784,18.3623046875,209.91582,203.36224,206.44388,206.57397,60.323368,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00023.jpg,all_motifs (864),False,28,28,784,18.4052734375,207.55103,199.52296,201.53699,202.87032,64.200554,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00024.jpg,all_motifs (864),False,28,28,784,18.390625,215.72577,208.40944,209.75128,211.29549,59.568436,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00025.jpg,all_motifs (864),False,28,28,784,18.60546875,209.50128,200.14668,206.5574,205.40178,55.95045,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00026.jpg,all_motifs (864),False,28,28,784,12.3974609375,210.15434,205.35204,208.97066,208.15901,53.212643,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00027.jpg,all_motifs (864),False,28,28,784,18.34375,196.63647,192.13266,194.65306,194.47406,64.2158,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00028.jpg,all_motifs (864),False,28,28,784,18.3720703125,198.1046,194.94643,197.25383,196.76828,63.43906,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00029.jpg,all_motifs (864),False,28,28,784,12.068359375,177.21046,171.42729,171.64413,173.42729,72.04149,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00030.jpg,all_motifs (864),False,28,28,784,11.9091796875,216.31505,212.3903,216.79082,215.16539,53.27173,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00031.jpg,all_motifs (864),False,28,28,784,18.146484375,217.86734,210.81888,213.59311,214.09311,50.037956,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00032.jpg,all_motifs (864),False,28,28,784,12.0888671875,215.8954,207.59566,214.90689,212.79932,51.510933,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00033.jpg,all_motifs (864),False,28,28,784,18.255859375,207.91199,197.73087,200.07909,201.90732,56.20901,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00034.jpg,all_motifs (864),False,28,28,784,11.8388671875,218.9324,212.3597,210.34694,213.87968,52.672825,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00035.jpg,all_motifs (864),False,28,28,784,18.2236328125,215.7704,208.31505,211.2921,211.79251,54.894638,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00036.jpg,all_motifs (864),False,28,28,784,18.28125,211.07271,202.38904,211.01785,208.15987,52.71535,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00037.jpg,all_motifs (864),False,28,28,784,18.24609375,213.16965,208.17091,211.2028,210.8478,53.034336,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00038.jpg,all_motifs (864),False,28,28,784,18.1337890625,214.97832,211.6454,214.1046,213.57611,54.700428,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00039.jpg,all_motifs (864),False,28,28,784,18.1728515625,206.02296,200.85841,203.46811,203.44983,59.973797,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00040.jpg,all_motifs (864),False,28,28,784,18.142578125,180.09949,174.71428,173.94771,176.25383,72.15083,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00041.jpg,all_motifs (864),False,28,28,784,18.119140625,199.6875,196.67984,198.52551,198.29762,63.29807,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00042.jpg,all_motifs (864),False,28,28,784,18.1494140625,193.34566,188.4426,190.6046,190.79762,64.15347,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00043.jpg,all_motifs (864),False,28,28,784,11.837890625,207.08546,206.21939,200.58035,204.6284,60.663223,4
+motifs (isen-isen)/Gunung Ringgit/all_motifs (864)/GunungRinggit_00044.jpg,all_motifs (864),False,28,28,784,18.0849609375,197.82271,198.93495,195.27678,197.34482,61.23208,4

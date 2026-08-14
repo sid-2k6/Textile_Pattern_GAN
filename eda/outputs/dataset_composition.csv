@@ -1,0 +1,14 @@
+dataset,class,images,unit,provenance,included_in_eda
+Batik_Lasem,Gunung Ringgit,864,motifs,name,True
+Batik_Lasem,Kricak / Watu Pecah,1004,motifs,name,True
+Batik_Lasem,Latohan,1373,motifs,name,True
+Batik_Lasem,Nyuk Pitu,1291,motifs,name,True
+Batik_Lasem,Seritan,1328,motifs,name,True
+Batik_Nitik_960,Batik Nitik 960,960,images,name,True
+Batik_Nitik_Sarimbit,Sarimbit 120,120,images,name,True
+Original Images,All Images (sources),40,images,listed,True
+NeuralLoom,Mekhela chador,33,groups,listed,True
+NeuralLoom,Mekhela cropped,165,images,listed,True
+NeuralLoom,Saree body,49,images,listed,True
+DeepFashion2,(excluded),0,images,excluded,False
+DeepFashion3D,(excluded),0,images,excluded,False

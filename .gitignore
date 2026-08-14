@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local dataset downloads (do not commit raw Drive data)
+dl/
+dl_all/
+drive_data/
+*.zip
+
+# OS
+.DS_Store

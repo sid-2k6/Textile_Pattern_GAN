@@ -1,0 +1,22 @@
+{
+  "n_images": 94,
+  "n_corrupt": 0,
+  "dims": [
+    {
+      "width": 28,
+      "height": 28,
+      "n": 94
+    }
+  ],
+  "brightness_mean": 203.58956909179688,
+  "brightness_std": 10.511542320251465,
+  "contrast_std_mean": 60.203269958496094,
+  "mean_rgb": [
+    206.74395751953125,
+    201.2889862060547,
+    202.73580932617188
+  ],
+  "filesize_kb_mean": 16.812645445478722,
+  "bytes_per_pixel_mean": 21.95937364307425,
+  "metadata_blocks_mean": 4.0
+}
