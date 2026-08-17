@@ -1,0 +1,56 @@
+{
+  "stages": [
+    {
+      "stage": 1,
+      "name": "Pattern representation learning",
+      "dataset": "Batik_Lasem all_motifs (dedup)",
+      "resolution": "28->64",
+      "labels": "motif_class",
+      "split": "origin-level",
+      "note": "foundation"
+    },
+    {
+      "stage": 2,
+      "name": "Conditional generative pretraining",
+      "dataset": "Batik_Lasem (+Nitik_960 if pulled)",
+      "resolution": "64",
+      "labels": "motif/category + palette + density",
+      "split": "source/category-level",
+      "note": "handle Nitik rotation grouping"
+    },
+    {
+      "stage": 3,
+      "name": "Aesthetic conditioning (proxy)",
+      "dataset": "computed aesthetic_features.csv",
+      "resolution": "64",
+      "labels": "objective descriptors (NOT human scores)",
+      "split": "same",
+      "note": "optionally external NIMA/CLIP-aesthetic reward (mark EXTERNAL)"
+    },
+    {
+      "stage": 4,
+      "name": "Cross-domain adaptation",
+      "dataset": "NeuralLoom (textile appearance)",
+      "resolution": ">=128",
+      "labels": "folder domain",
+      "split": "Mekhela-source-level",
+      "note": "domain shift; keep separate from batik pool"
+    },
+    {
+      "stage": 5,
+      "name": "Garment visualization",
+      "dataset": "NeuralLoom 2D / DeepFashion2 (PENDING) / DeepFashion3D (PENDING)",
+      "resolution": "native",
+      "labels": "-",
+      "split": "-",
+      "note": "2D texture-mapping now; 3D only if DeepFashion3D accessible"
+    }
+  ],
+  "hard_rules": [
+    "Deduplicate 28x28_images vs all_motifs before counting/splitting.",
+    "Source-aware splits only (origin_images / fabric piece / Mekhela source).",
+    "Do NOT concatenate batik crops with garment photos in one raw pool.",
+    "Do NOT claim human aesthetic supervision; descriptors are proxies.",
+    "Do NOT claim 3D visualization without DeepFashion3D."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "audited_here": [
+    "Batik_Lasem (metadata COMPLETE; 94 imgs sample)",
+    "NeuralLoom (66 imgs sample)"
+  ],
+  "documented_not_pulled": [
+    "Batik_Nitik_960 (PDF)",
+    "Original Images (39 origins via metadata)",
+    "Batik_Nitik_Sarimbit_120 (unverified)"
+  ],
+  "pending_access": [
+    "DeepFashion2 (zip)",
+    "DeepFashion3D (rar/zip 3D)"
+  ],
+  "batik_lasem_verified": {
+    "records": 5860,
+    "classes": {
+      "Latohan": 1373,
+      "Seritan": 1328,
+      "Nyuk Pitu": 1291,
+      "Kricak / Watu Pecah": 1004,
+      "Gunung Ringgit": 864
+    },
+    "origin_images": 39,
+    "max_crops_from_one_origin": 697,
+    "resolution_records": {
+      "28 x 28": 4949,
+      "142 x 142": 911
+    },
+    "workshops": 7,
+    "years": {
+      "2022": 5448,
+      "2021": 412
+    },
+    "representation_relationship": "28x28_images \u2286 all_motifs (exact MD5 dup, OBSERVED on Gunung Ringgit); all_motifs = 28x28 \u222a 142x142 (INFERRED from counts)",
+    "color_profile": "100% sRGB",
+    "image_type": "100% raw (crop)"
+  },
+  "neuralloom_verified_here": {
+    "mekhela_sources_observed": 33,
+    "crops_per_source_observed": 5,
+    "crop_folder_named_after_source": true,
+    "user_reported_unverified_here": {
+      "total_files": 353,
+      "saree_images": 155,
+      "unique_hashes": 346,
+      "exact_dup_copies": 7,
+      "dup_file": "IMG_20180824_200147.jpg"
+    }
+  },
+  "critical_caveats": [
+    "Effective independent Batik_Lasem sources = 39, not 5860 (severe source concentration).",
+    "Batik_Nitik_960 contains 90/180/270 rotational augmentation (documented).",
+    "No human aesthetic labels exist in any dataset.",
+    "28x28 resolution makes GLCM/Gabor/FFT texture descriptors unreliable.",
+    "True 3D garment visualization requires DeepFashion3D (PENDING access)."
+  ]
+}

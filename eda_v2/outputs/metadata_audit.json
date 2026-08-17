@@ -1,0 +1,57 @@
+{
+  "source_file": "metadata_motifs.csv",
+  "delimiter": ";",
+  "encoding": "utf-8-sig",
+  "n_records_excl_header": 5860,
+  "columns": [
+    "filename",
+    "motif_name",
+    "origin_images",
+    "Origin_images_Type",
+    "Source Workshop",
+    "year_collected",
+    "image_type",
+    "image_resolution",
+    "color_profile",
+    "annotator_initials"
+  ],
+  "motif_classes": {
+    "Latohan": 1373,
+    "Seritan": 1328,
+    "Nyuk Pitu": 1291,
+    "Kricak / Watu Pecah": 1004,
+    "Gunung Ringgit": 864
+  },
+  "motif_class_total": 5860,
+  "n_unique_origin_images": 39,
+  "origin_images_min_crops": 7,
+  "origin_images_max_crops": 697,
+  "origin_images_median_crops": 105.0,
+  "origin_images_mean_crops": 150.25641025641025,
+  "n_workshops": 7,
+  "workshops": {
+    "Pesona Canting": 2253,
+    "KUB Srikandi": 1438,
+    "Pusaka Beruang": 747,
+    "VJ Basiroen artwork": 682,
+    "Sekar Kencana": 444,
+    "Katrin Bee": 166,
+    "Lumintu Batik": 130
+  },
+  "years": {
+    "2022": 5448,
+    "2021": 412
+  },
+  "n_duplicate_filenames": 0,
+  "filename_prefix_matches_motif_frac": 1.0,
+  "image_resolution_values": {
+    "28 x 28": 4949,
+    "142 x 142": 911
+  },
+  "color_profile_values": {
+    "sRGB IEC61966-2.1": 5860
+  },
+  "image_type_values": {
+    "raw (crop)": 5860
+  }
+}

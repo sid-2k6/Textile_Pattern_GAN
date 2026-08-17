@@ -1,0 +1,10 @@
+component,required_input,dataset_source,actual_availability,preprocessing,potential_condition,limitation
+Pattern Encoder,motif/pattern images,Batik_Lasem all_motifs (28/142),AVAILABLE (metadata) / images SAMPLE here,dedup 28x28⊆all_motifs; resize,motif_class,28x28 limits fine texture; upscale cautiously
+Multi-scale Feature Encoder,same at >=64px,Batik_Lasem 142x142 subset (911) + Nitik 24MP,PARTIAL: only 911 hi-res batik; Nitik not pulled,tile/resize,-,Only 3/5 motifs have 142; Nitik has true hi-res
+Aesthetic Attribute Encoder,objective visual descriptors,computed from any image,COMPUTED (aesthetic_features.csv),standardize; flag <64px,color/texture/symmetry vectors,descriptors != human aesthetic; texture unreliable <64px
+Condition Fusion,condition vectors,metadata (class/origin) + computed descriptors,AVAILABLE for Batik_Lasem,concat/embed,motif+palette+density,no human aesthetic label exists
+Generator,target-res exemplars,Batik_Lasem (28/64),AVAILABLE,"normalize [-1,1]",conditioning,start 28-64px
+Multi-scale Discriminator,real images multi-res,Batik_Lasem + Nitik,PARTIAL hi-res,pyramid,-,hi-res batik scarce
+Aesthetic Discriminator/Aux head,descriptor targets or pretrained aesthetic model,computed descriptors (weak) OR EXTERNAL NIMA/LAION-aesthetic,descriptors AVAILABLE; human scores MISSING,-,aesthetic reward,must mark external model as external
+Pattern Consistency,repetition/periodicity targets,FFT/GLCM descriptors,COMPUTED (reliable only >=64px),-,periodicity,unreliable at 28x28
+Garment Visualization,garment images/3D,NeuralLoom (2D) / DeepFashion2 (2D) / DeepFashion3D (3D PENDING),2D partial; 3D PENDING,texture mapping,-,true 3D needs DeepFashion3D access
