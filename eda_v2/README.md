@@ -20,7 +20,38 @@ DeepFashion3D** as *pending access*.
   *SAMPLE*. Re-run on the full local dataset before publication.
 - No human aesthetic labels exist in any dataset; none were fabricated.
 
-## Reproduce on the FULL local dataset
+## ▶ Run on the FULL local dataset — Windows (one command)
+
+You already have the data at `D:\Textile_Pattern_GAN\Datasets\`. From the repo root:
+
+```powershell
+# 1. get this eda_v2 folder into your working copy
+git fetch origin
+git checkout eda/research-audit-v2      # brings in eda_v2\ (your Datasets\ is gitignored, stays put)
+
+# 2. run the whole audit (auto-finds the metadata CSV, excludes DeepFashion)
+cd eda_v2
+powershell -ExecutionPolicy Bypass -File .\run_full_audit.ps1
+```
+Outputs land in `eda_v2\outputs\` (CSV/JSON) and `eda_v2\figures\` (PNG). Edit the
+`$DATA` line in `run_full_audit.ps1` if your `Datasets` folder is elsewhere.
+`DeepFashion2/3D` are skipped on purpose (pending access).
+
+> The runner sets two env vars for you: `TEXTILE_METADATA_CSV` (the Batik_Lasem
+> `metadata motifs.csv`) and `DATASET_ROOT`. Near-duplicate detection on the full
+> Batik_Lasem set (all three representation folders) can take **10–20 min**.
+
+### Manual equivalent (any OS)
+```powershell
+$env:TEXTILE_METADATA_CSV = "D:\Textile_Pattern_GAN\Datasets\Batik_Lasem\motifs (isen-isen)\metadata motifs.csv"
+$env:DATASET_ROOT = "D:\Textile_Pattern_GAN\Datasets"
+python metadata_audit.py $env:TEXTILE_METADATA_CSV
+python image_audit.py --datasets "Batik_Lasem=$env:DATASET_ROOT\Batik_Lasem;Batik_Nitik_960=$env:DATASET_ROOT\Batik_Nitik_960;Batik_Nitik_Sarimbit_120=$env:DATASET_ROOT\Batik_Nitik_Sarimbit_120;NeuralLoom=$env:DATASET_ROOT\NeuralLoom"
+python generate_figures.py
+python build_plans.py
+```
+
+## Reproduce (generic)
 ```bash
 pip install pillow numpy pandas matplotlib scipy scikit-image pypdf gdown
 

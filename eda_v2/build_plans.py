@@ -9,6 +9,8 @@ import os, json, pandas as pd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "outputs"); os.makedirs(OUT, exist_ok=True)
+META = os.environ.get("TEXTILE_METADATA_CSV",
+                      "/projects/sandbox/data/_metadata/metadata_motifs.csv")
 
 # ---------------------------------------------------------------- dataset readiness (Part AB)
 readiness = [
@@ -138,7 +140,7 @@ json.dump(split_spec, open(os.path.join(OUT,"split_manifest_spec.json"),"w"), in
 
 # concrete partial split manifest for the 39 Batik_Lasem origins (from metadata)
 try:
-    m = pd.read_csv("/projects/sandbox/data/_metadata/metadata_motifs.csv", sep=";",
+    m = pd.read_csv(META, sep=";",
                     dtype=str, encoding="utf-8-sig", keep_default_na=False)
     m = m.loc[:, [c for c in m.columns if not c.startswith("Unnamed") and c.strip()]]
     m.columns=[c.strip() for c in m.columns]

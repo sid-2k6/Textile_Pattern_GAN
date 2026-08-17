@@ -248,7 +248,8 @@ def main():
     ap.add_argument("--datasets", required=True,
                     help="semicolon list of name=path pairs")
     ap.add_argument("--metadata",
-                    default="/projects/sandbox/data/_metadata/metadata_motifs.csv")
+                    default=os.environ.get("TEXTILE_METADATA_CSV",
+                        "/projects/sandbox/data/_metadata/metadata_motifs.csv"))
     ap.add_argument("--near-dup-threshold", type=int, default=6)
     args = ap.parse_args()
 
