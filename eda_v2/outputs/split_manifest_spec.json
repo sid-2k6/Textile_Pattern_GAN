@@ -1,0 +1,26 @@
+{
+  "principle": "SOURCE-LEVEL isolation. Never split source-linked images across train/val/test.",
+  "Batik_Lasem": {
+    "split_unit": "origin_images (39 units) \u2014 NOT individual crops",
+    "reason": "one origin -> up to 697 crops (52.5% of a class); crop-level split leaks",
+    "caveat": "only 39 origin units total (8-10/class) => very coarse; consider grouped CV",
+    "recommended": {
+      "train_origins": "~27",
+      "val_origins": "~6",
+      "test_origins": "~6",
+      "constraint": "stratify by motif_class; keep each origin wholly in one split"
+    },
+    "dedup_before_split": "drop 28x28_images copies (\u2286 all_motifs, exact MD5 dup)"
+  },
+  "Batik_Nitik_960": {
+    "split_unit": "fabric piece / motif base (before 90/180/270 rotation)",
+    "reason": "16 imgs/category = 4 motifs x 4 rotations => rotations must stay together",
+    "recommended": "split on the 60 categories or 240 motif-bases; keep rotations grouped"
+  },
+  "NeuralLoom": {
+    "split_unit": "Mekhela source image (33) / Saree source folder",
+    "reason": "5 crops per Mekhela source are source-linked views",
+    "recommended": "keep all crops of a source in the same split"
+  },
+  "status": "SPEC ONLY \u2014 actual manifest requires full local dataset (throttled here)."
+}

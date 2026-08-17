@@ -1,0 +1,15 @@
+attribute,dataset_scope,computable,method,reliability,requires_annotation
+hue diversity / hue_entropy,all image datasets,YES,HSV hist entropy,medium,NO
+mean saturation / value,all,YES,HSV mean,high,NO
+colorfulness (Hasler-Susstrunk),all,YES,"std/mean of rg,yb",high,NO
+LAB statistics,all,YES,skimage rgb2lab,high,NO
+dominant palette,all (>=64px best),YES,k-means on pixels,medium,NO
+edge density,all,YES,Canny,medium (noisy 28px),NO
+GLCM (contrast/homogeneity/energy/corr),>=64px,PARTIAL,graycomatrix,LOW at 28px,NO
+LBP statistics,>=64px,PARTIAL,local_binary_pattern,LOW at 28px,NO
+Gabor statistics,>=64px,PARTIAL,gabor bank,LOW at 28px,NO
+FFT periodicity/repetition,>=128px ideally,PARTIAL,2D FFT radial,LOW at 28px,NO
+symmetry (h/v),all,YES,flip diff,medium,NO
+spatial entropy / balance,all,YES,grid edge entropy,medium,NO
+human aesthetic preference score,NONE,NO,requires human rating or external model,-,YES
+learned aesthetic embedding,NONE natively,EXTERNAL only,pretrained NIMA/CLIP-aesthetic,-,external model

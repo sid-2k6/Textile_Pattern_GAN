@@ -1,0 +1,11 @@
+column,dtype,n,non_blank,blank,n_unique,example
+filename,string,5860,5860,0,5860,GunungRinggit_00001.jpg
+motif_name,string,5860,5860,0,5,Gunung Ringgit
+origin_images,string,5860,5860,0,39,Gunung Ringgit Bouquet.jpg
+Origin_images_Type,string,5860,5860,0,3,Textile
+Source Workshop,string,5860,5860,0,8,Pesona Canting
+year_collected,string,5860,5860,0,2,2021
+image_type,string,5860,5860,0,1,raw (crop)
+image_resolution,string,5860,5860,0,2,28 x 28
+color_profile,string,5860,5860,0,1,sRGB IEC61966-2.1
+annotator_initials,string,5860,5860,0,1,VJB

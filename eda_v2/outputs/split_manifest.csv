@@ -1,0 +1,40 @@
+origin_images,n_crops,n_motif_classes,motif_classes,split
+Batik Artisan with Seritan Background.jpg,697,1,Seritan,train
+Gunung Ringgit Bouquet.jpg,413,1,Gunung Ringgit,val
+Phoenix and Lotus.jpg,400,1,Nyuk Pitu,train
+Seaweed or latoh.jpg,328,1,Latohan,test
+Latohan and farmer.jpg,327,1,Latohan,train
+Latohan Dragon.jpg,317,2,Nyuk Pitu|Seritan,train
+Kawis With Pagi-Sore Kricak Background.jpg,290,1,Kricak / Watu Pecah,train
+Withering Teak in Blue.jpg,265,1,Kricak / Watu Pecah,train
+Isen Cloth 4.jpg,246,3,Kricak / Watu Pecah|Latohan|Seritan,train
+Isen Cloth 5.jpg,232,1,Latohan,train
+Isen Cloth 2.jpg,175,2,Gunung Ringgit|Nyuk Pitu,train
+The Twelve Zodiacs with Red Tambal Background.jpg,170,1,Latohan,test
+Cranes with Bledak Background.jpg,166,1,Nyuk Pitu,train
+Lawang Ombo Kilin Latar Bledak.jpg,144,1,Seritan,train
+Gunung Ringgit Peacocks.jpg,130,1,Gunung Ringgit,train
+Artisan Latar Tanahan.jpg,120,1,Seritan,train
+Isen Cloth 1.jpg,116,2,Gunung Ringgit|Kricak / Watu Pecah,val
+Latohan with Chinese Letter.jpg,116,1,Latohan,train
+Gunung Ringgit Blue Bouquet.jpg,105,1,Gunung Ringgit,train
+Isen Cloth 3.jpg,105,2,Nyuk Pitu|Seritan,train
+Phoenix in Purple.jpg,104,1,Nyuk Pitu,train
+Fern with Bledak Background.jpg,99,1,Kricak / Watu Pecah,train
+Pagi-Sore Temple and Bamboo.jpg,96,2,Kricak / Watu Pecah|Latohan,train
+Phoenix in Bright Green.jpg,89,1,Nyuk Pitu,test
+Water Animals with Sekar Jagad Background.jpg,87,1,Kricak / Watu Pecah,train
+Monkey Pod Tree & Peacock with Lereng.jpg,81,1,Gunung Ringgit,train
+Gunung Ringgit Pink Bouquet.jpg,66,1,Gunung Ringgit,train
+Sekar Jagad Chinese Character.jpg,63,1,Seritan,train
+Windmill with Tambal.jpg,63,1,Seritan,val
+Withering Teak in Red.jpg,56,1,Kricak / Watu Pecah,train
+Latohan with chrysanthemum.jpg,47,1,Latohan,train
+King of the Jungle and Trees.jpg,29,1,Seritan,train
+Farmer and Fisherman with Latohan Background.jpg,25,1,Latohan,train
+Gunung Ringgit Kopi Lelet.jpg,24,1,Gunung Ringgit,train
+Cap Go Meh with Pagi-Sore Background.jpg,17,1,Latohan,train
+Phoenix and Brown Lotus.jpg,17,1,Nyuk Pitu,train
+"Temple, Lantern & Dragon with Bledak Background.jpg",16,1,Gunung Ringgit,train
+Phoenix With Green Lotus.jpg,12,1,Nyuk Pitu,train
+Fruits with Bledak Pasiran Background.jpg,7,1,Seritan,train

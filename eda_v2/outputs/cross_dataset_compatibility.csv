@@ -1,0 +1,6 @@
+dataset_a,dataset_b,verdict,reason
+Batik_Lasem,Batik_Nitik_960,PARTIALLY COMPATIBLE,both flat batik motifs; but 28px vs 24MP scale gap + Nitik rotation aug
+Batik_Lasem,NeuralLoom,INCOMPATIBLE (raw joint),"28px isolated motifs vs multi-MP garment photos; brightness 204 vs 129, saturation .10 vs .41 (OBSERVED)"
+Batik_Nitik_960,NeuralLoom,INCOMPATIBLE (raw joint),studio swatch vs field garment photo; scale/lighting differ
+Batik_Lasem,Original Images,COMPLEMENTARY,originals are the SOURCE cloths of the crops; use for context not mixing
+Batik_*,DeepFashion2/3D,INCOMPATIBLE domains / PENDING,fashion garments vs textile motifs; use only for garment structure/vis
