@@ -1,0 +1,3 @@
+dataset,root,accessible,total_files,image_files,nonimage_files,folder_count,extensions,is_sample
+Batik_Lasem,/projects/sandbox/drive_data/Datasets/Batik_Lasem,True,94,94,0,2,"{"".jpg"": 94}",True
+NeuralLoom,/projects/sandbox/data/NeuralLoom,True,66,66,0,8,"{"".jpg"": 66}",True

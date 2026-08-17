@@ -1,0 +1,8 @@
+dataset,pattern_learning,aesthetic_learning,conditioning_available,garment_context,visualization,evaluation_role,recommended_usage
+Batik_Lasem,YES (motif/isen-isen),proxy only (visual descriptors),"motif class, origin, workshop, year, resolution",NO,NO,held-out motif fidelity,Primary pattern/motif source (28->64px).
+Batik_Nitik_960,YES (Nitik patterns),proxy only,60 categories,NO,NO,classification/retrieval baseline,Pattern diversity; handle rotation aug.
+Batik_Nitik_Sarimbit_120,TBD (inspect),proxy only,UNKNOWN,weak,NO,TBD,Verify before any use.
+Original Images,context (global layout),descriptive text (not scores),39 cloth descriptions,NO,partial (cloth photos),qualitative,Source lineage + global pattern context.
+NeuralLoom,secondary (woven textile appearance),proxy only,Mekhela/Saree (folder),NO,YES (garment textile),domain-shift test,Apparel/textile appearance; different domain.
+DeepFashion2,NO (pending),NO,landmarks/pose (if extracted),garment structure,render/try-on,external generalization,PENDING; garment structure only if accessible.
+DeepFashion3D,NO (pending),NO,3D meshes/pointclouds,NO,3D garment try-on,external,PENDING; only 3D-visualization candidate.

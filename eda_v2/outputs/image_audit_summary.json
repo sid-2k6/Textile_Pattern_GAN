@@ -1,0 +1,283 @@
+{
+  "datasets": [
+    "Batik_Lasem",
+    "NeuralLoom"
+  ],
+  "n_images_analysed": 160,
+  "n_corrupt": 0,
+  "n_exact_dup_groups": 44,
+  "n_near_dup_groups": 43,
+  "resolutions": [
+    {
+      "dataset": "Batik_Lasem",
+      "width": 28,
+      "height": 28,
+      "count": 94
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 454,
+      "height": 454,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 493,
+      "height": 493,
+      "count": 2
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 493,
+      "height": 494,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 494,
+      "height": 493,
+      "count": 2
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 553,
+      "height": 553,
+      "count": 3
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 581,
+      "height": 581,
+      "count": 2
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 581,
+      "height": 582,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 582,
+      "height": 581,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 582,
+      "height": 582,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 598,
+      "height": 598,
+      "count": 5
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 610,
+      "height": 610,
+      "count": 5
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 629,
+      "height": 629,
+      "count": 4
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 630,
+      "height": 630,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 662,
+      "height": 662,
+      "count": 5
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 942,
+      "height": 941,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 971,
+      "height": 971,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 987,
+      "height": 986,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1106,
+      "height": 1106,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1134,
+      "height": 1134,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1163,
+      "height": 1163,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1179,
+      "height": 1178,
+      "count": 2
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1196,
+      "height": 1196,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1220,
+      "height": 1220,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1258,
+      "height": 1258,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1263,
+      "height": 1263,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1282,
+      "height": 1282,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1283,
+      "height": 1282,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1312,
+      "height": 1311,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1324,
+      "height": 1324,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1328,
+      "height": 1771,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1416,
+      "height": 1415,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1460,
+      "height": 1460,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1749,
+      "height": 1749,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1786,
+      "height": 1786,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1816,
+      "height": 1815,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1838,
+      "height": 1838,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 1971,
+      "height": 1971,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 2171,
+      "height": 2171,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 2371,
+      "height": 2371,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 2519,
+      "height": 2519,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 2571,
+      "height": 2572,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 2735,
+      "height": 2734,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 2751,
+      "height": 2752,
+      "count": 1
+    },
+    {
+      "dataset": "NeuralLoom",
+      "width": 3023,
+      "height": 3024,
+      "count": 2
+    }
+  ],
+  "note": "SAMPLE-BASED for large folders (gdown 50-file/folder cap + throttling)"
+}
