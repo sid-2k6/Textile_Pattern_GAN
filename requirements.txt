@@ -1,0 +1,20 @@
+# Core (torch/torchvision are preinstalled on Google Colab)
+torch>=2.0
+torchvision>=0.15
+# FID / KID
+torchmetrics>=1.0.0
+torch-fidelity
+scipy
+# Data / plotting
+numpy
+pandas
+matplotlib
+pillow
+scikit-learn
+# StyleGAN2-ADA custom-op build
+ninja
+click
+psutil
+requests
+imageio
+imageio-ffmpeg==0.4.3
