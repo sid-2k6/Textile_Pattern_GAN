@@ -66,13 +66,20 @@ correct gradient penalty (λ = 10), critic uses **InstanceNorm (no BatchNorm)**,
 critic loss / gradient penalty / Wasserstein estimate — **discriminator accuracy is
 N/A for a WGAN critic and is never fabricated**.
 
-### 6. Baseline 3 — StyleGAN2-ADA  (`notebooks/03_StyleGAN2_ADA_BatikLasem_50pct.ipynb`)
-Official **NVlabs/stylegan2-ada-pytorch** (pinned commit), trained on the same 50%
-train split (pre-resized to 128×128 with identical preprocessing, packed via
-`dataset_tool.py`). Uses native ADA training/logging and resume; we **additionally
-recompute FID/KID against the held-out test set** with the same evaluator as the
-other baselines for a fair comparison. (Native `fid50k_full` uses training reals
-and is reported separately.)
+### 6. Baseline 3 — StyleGAN2 + differentiable augmentation  (`notebooks/03_StyleGAN2_ADA_BatikLasem_50pct.ipynb`)
+Uses the well-established, pip-installable, **pure-PyTorch `lucidrains/stylegan2_pytorch`**
+implementation (with differentiable augmentation — translation + cutout — the
+ADA-equivalent for limited data), trained on the same 50% train split pre-resized to
+128×128 with identical preprocessing. FID/KID are computed with the **same
+`batik_gan.metrics` evaluator + held-out test set** as the other baselines, so all
+three are directly comparable. Native checkpoint/resume via the library.
+
+> **Why not the official NVLabs StyleGAN2-ADA repo?** Its 2021 custom CUDA kernels
+> (`bias_act`, `upfirdn2d`) do not compile on current Colab (PyTorch 2.11 / CUDA 12.8)
+> and `train.py` crashes on the modern PyTorch API; on an L4 (sm_89) you also cannot
+> downgrade PyTorch. The task explicitly permits "a well-established compatible
+> implementation", so we use `lucidrains/stylegan2_pytorch` (no custom-CUDA build).
+> Output folder stays `outputs/StyleGAN2_ADA/` for comparison-notebook compatibility.
 
 ### 7. Comparison  (`notebooks/04_Baseline_Comparison.ipynb`)
 Reads saved `history.csv` / `final_metrics.*` / `config.json` (no retraining) and
@@ -88,7 +95,8 @@ Set `RESUME = True` (default). With `RESUME_CHECKPOINT = None` the notebook
 auto-discovers the latest checkpoint and prints *"Checkpoint found. Resuming from
 epoch X."* (or *"Starting from epoch 0."*). Checkpoints, `history.csv`, samples and
 plots are written to **Google Drive** (`OUTPUT_ROOT`) so a Colab disconnect loses no
-progress — just re-run. StyleGAN2-ADA resumes natively from its latest snapshot.
+progress — just re-run. The StyleGAN2 notebook resumes from the latest
+`stylegan2_pytorch` checkpoint (`models/batik_sg2/model_*.pt`) plus `history.csv`.
 
 ### 10. Output directory (not committed — see `.gitignore`)
 ```
