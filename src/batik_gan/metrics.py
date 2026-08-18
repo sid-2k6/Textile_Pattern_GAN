@@ -54,16 +54,27 @@ class GenerativeEvaluator:
         self._inception = None
 
     def _inception_features(self, imgs_uint8):
-        """Inception pool3 features (for the diversity statistic)."""
+        """Inception pool3 features (for the diversity statistic).
+
+        torchmetrics' bundled Inception (NoTrainInceptionV3) expects UINT8 in
+        [0,255] and does its own resize/normalisation internally — so we must
+        pass uint8 directly (passing float was the earlier NaN bug).
+        """
         import torch
-        import torch.nn.functional as F
         if self._inception is None:
             self._inception = self._fid.inception    # reuse torchmetrics' net
-        x = imgs_uint8.to(self.device).float()
-        x = F.interpolate(x, size=(299, 299), mode="bilinear", align_corners=False)
         with torch.no_grad():
-            feats = self._inception(x)
+            feats = self._inception(imgs_uint8.to(self.device))
         return feats
+
+    @staticmethod
+    def _pixel_features(imgs_uint8):
+        """Fallback diversity features: 16x16 grayscale-ish flattened pixels."""
+        import torch
+        import torch.nn.functional as F
+        x = imgs_uint8.float() / 255.0
+        x = F.interpolate(x, size=(16, 16), mode="bilinear", align_corners=False)
+        return x.reshape(x.size(0), -1).cpu()
 
     @staticmethod
     def _batched(gen_fn, n, batch, device):
@@ -89,31 +100,38 @@ class GenerativeEvaluator:
         self._fid.update(self.real.to(self.device), real=True)
         self._kid.update(self.real.to(self.device), real=True)
         # fake
-        fake_feats = []
+        inc_feats, pix_feats, inc_ok = [], [], True
         for fb in self._batched(gen_fn, n_gen, batch, self.device):
             self._fid.update(fb, real=False)
             self._kid.update(fb, real=False)
             if compute_diversity:
-                try:
-                    fake_feats.append(self._inception_features(fb).cpu())
-                except Exception:
-                    fake_feats = None
-                    compute_diversity = False
+                if inc_ok:
+                    try:
+                        inc_feats.append(self._inception_features(fb).cpu())
+                    except Exception:
+                        inc_ok = False          # fall back to pixel features
+                        inc_feats = []
+                pix_feats.append(self._pixel_features(fb))   # always available
         fid = float(self._fid.compute().item())
         kid_mean, kid_std = self._kid.compute()
         out = {"fid": fid, "kid_mean": float(kid_mean.item()),
                "kid_std": float(kid_std.item()),
                "n_real": int(self.n_real), "n_gen": int(n_gen),
                "kid_subset_size": int(self.kid_subset_size)}
-        # Diversity is a *statistic*, never fabricated: NaN if it cannot be computed.
-        if compute_diversity and fake_feats:
+        # Diversity is a *statistic* (mean pairwise feature distance), not accuracy.
+        # Prefer Inception features; fall back to pixel features so it is populated.
+        out["diversity"] = float("nan")
+        out["diversity_source"] = "none"
+        if compute_diversity:
             try:
-                feats = torch.cat(fake_feats, dim=0)
-                out["diversity"] = float(pairwise_feature_diversity(feats))
+                if inc_feats:
+                    out["diversity"] = float(pairwise_feature_diversity(torch.cat(inc_feats)))
+                    out["diversity_source"] = "inception"
+                elif pix_feats:
+                    out["diversity"] = float(pairwise_feature_diversity(torch.cat(pix_feats)))
+                    out["diversity_source"] = "pixel_16x16"
             except Exception:
-                out["diversity"] = float("nan")
-        else:
-            out["diversity"] = float("nan")
+                pass
         return out
 
 
