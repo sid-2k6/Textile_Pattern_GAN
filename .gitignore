@@ -7,7 +7,17 @@ __pycache__/
 dl/
 dl_all/
 drive_data/
+data/_metadata/
 *.zip
+
+# GAN experiment artifacts (kept OUT of git — live on Google Drive)
+outputs/
+**/checkpoints/
+**/generated_samples/
+**/training-runs/
+*.pt
+*.pth
+*.pkl
 
 # OS
 .DS_Store

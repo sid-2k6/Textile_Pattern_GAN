@@ -9,10 +9,16 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from PIL import Image
 
+import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "outputs")
 FIG = os.path.join(HERE, "figures"); os.makedirs(FIG, exist_ok=True)
-META = "/projects/sandbox/data/_metadata/metadata_motifs.csv"
+# Metadata CSV: env var TEXTILE_METADATA_CSV, else argv[1], else sandbox default.
+META = os.environ.get("TEXTILE_METADATA_CSV",
+                      sys.argv[1] if len(sys.argv) > 1
+                      else "/projects/sandbox/data/_metadata/metadata_motifs.csv")
+# Dataset root for the sample-grid figures (env var DATASET_ROOT).
+DATASET_ROOT = os.environ.get("DATASET_ROOT", "/projects/sandbox")
 
 m = pd.read_csv(META, sep=";", dtype=str, encoding="utf-8-sig", keep_default_na=False)
 m = m.loc[:, [c for c in m.columns if not c.startswith("Unnamed") and c.strip()]]
@@ -149,12 +155,13 @@ def grid(paths, title, name, cell=1.4):
     fig.suptitle(title); save(fig, name)
 
 import glob
-gr = sorted(glob.glob("/projects/sandbox/drive_data/Datasets/Batik_Lasem/**/all_motifs*/*.jpg", recursive=True))
-grid(gr, "Batik_Lasem / Gunung Ringgit (28x28 crops, SAMPLE)", "11_grid_batik_gunungringgit.png")
-mek = sorted(glob.glob("/projects/sandbox/data/NeuralLoom/**/Mekhela chador/*.jpg", recursive=True))
+gr = sorted(glob.glob(os.path.join(DATASET_ROOT, "**", "Batik_Lasem", "**", "all_motifs*", "*.jpg"), recursive=True)) \
+     or sorted(glob.glob(os.path.join(DATASET_ROOT, "**", "all_motifs*", "*.jpg"), recursive=True))
+grid(gr, "Batik_Lasem / all_motifs crops (SAMPLE)", "11_grid_batik_gunungringgit.png")
+mek = sorted(glob.glob(os.path.join(DATASET_ROOT, "**", "Mekhela chador", "*.jpg"), recursive=True))
 grid(mek, "NeuralLoom / Mekhela source images (SAMPLE)", "12_grid_neuralloom_mekhela.png")
 # 13. one mekhela source and its 5 crops (lineage)
-crops = sorted(glob.glob("/projects/sandbox/data/NeuralLoom/**/mekhela_cropped_imgs2018*/*", recursive=True))
+crops = sorted(glob.glob(os.path.join(DATASET_ROOT, "**", "mekhela_cropped_imgs2018*", "*"), recursive=True))
 if crops:
     one = os.path.dirname(crops[0])
     cp = sorted(glob.glob(os.path.join(one, "*")))
