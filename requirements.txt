@@ -11,10 +11,10 @@ pandas
 matplotlib
 pillow
 scikit-learn
-# StyleGAN2-ADA custom-op build
-ninja
-click
-psutil
-requests
-imageio
-imageio-ffmpeg==0.4.3
+# StyleGAN2 baseline (pure-PyTorch, no custom-CUDA build) + its runtime deps
+stylegan2_pytorch==1.8.10
+vector_quantize_pytorch
+kornia
+einops
+retry
+tqdm
